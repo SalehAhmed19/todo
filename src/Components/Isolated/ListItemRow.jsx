@@ -34,6 +34,7 @@ const ListItemRow = () => {
             >
               Update
             </button>
+            <UpdateModal layout={layout} setLayout={setLayout} />
             <button
               className="bg-[#d81919] text-[#fff] px-4 py-1 rounded ml-3"
               endDecorator={<DeleteForever />}
@@ -44,11 +45,10 @@ const ListItemRow = () => {
             >
               Delete
             </button>
+            <DeleteModal open={open} setOpen={setOpen} />
           </div>
         </div>
       ))}
-      <UpdateModal layout={layout} setLayout={setLayout} />
-      <DeleteModal open={open} setOpen={setOpen} />
     </React.Fragment>
   );
 };
