@@ -16,6 +16,7 @@ import MailIcon from "@mui/icons-material/Mail";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
+import ListItemRow from "./ListItemRow";
 
 const drawerWidth = 240;
 
@@ -139,9 +140,7 @@ function DrawerNav(props) {
       >
         <Toolbar />
         {/* content */}
-        <div className="p-5 rounded-md bg-[#efefef]">
-          <h4>What To Do</h4>
-        </div>
+        <ListItemRow />
       </Box>
     </Box>
   );
